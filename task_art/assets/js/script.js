@@ -20,12 +20,14 @@ $(function () {
                 $('.alert-success').delay(400).fadeIn();
 
             } else {
-                $('.alert-error').html("Увы, произошла ошибка. Попробуйте отправить сообщение позже");
+                $('.alert-error').html(result['error-msg']);
                 $('.alert-error').fadeIn();
-                console.log(result['error-msg']);
+                console.log(result['error-msg-sql']);
             }
 
         }).fail(function () {
+            $('.alert-error').html("Что-то пошло не так. Повторите позже.");
+            $('.alert-error').fadeIn();
             console.log('Что-то пошло не так. Повторите позже.');
         });
     }
