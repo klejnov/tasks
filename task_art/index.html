@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>d
+<head>
     <meta charset="utf-8">
-    <title>Title</title>
+    <title>Test task</title>
 
     <!--	<base href="/">-->
 
@@ -14,10 +14,10 @@
     <meta name="keywords" content="">
 
     <meta property="og:type" content="website"/>
-    <meta property="og:title" content="Здесь пишем заголовок"/>
-    <meta property="og:desсription" content="описание страницы"/>
+    <meta property="og:title" content="Test task"/>
+    <meta property="og:desсription" content="Test task desсription"/>
     <meta property="og:url" content="канонический адрес страницы"/>
-    <meta property="og:image" content="адрес картинки которая будет в описании страницы в соц. сети"/>
+    <meta property="og:image" content=""/>
 
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="assets/images/favicon.ico">
@@ -35,7 +35,7 @@
 
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/wow.min.js"></script>
+    <script src="libs/wow.min.js"></script>
     <script>
         new WOW().init();
     </script>
@@ -245,16 +245,20 @@
             <div class="block-about-text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda atque
                 deleniti ducimus ea ipsum optio quae, quaerat repellendus? Est, et.</p></div>
         </div>
-        <div class="form"><p>Drop Us A Message</p>
+        <div class="form"><p>Напишите нам сообщение</p>
 
-            <form action="#" class="form">
+            <form action="#" class="form" id="message-user">
                 <div class="input-wrap grid">
                     <label for="user" class="user"><input id="user" name="user" placeholder="Введите Ваш имя" type="text" required></label>
                     <label for="email" class="email"><input id="email" name="email" placeholder="Ваш email" type="email" required></label>
+                    <label for="phone" class="phone"><input type="tel" id="phone" placeholder="Введите ваш телефон"></label>
                     <label for="message" class="message"><textarea id="message" name="message" placeholder="Ваше сообщение" type="text" required></textarea></label>
                 </div>
-                <input class="button-form" value="Submit" type="submit">
+                <input class="button-form" value="Отправить" type="submit">
             </form>
+
+            <div class="alert-success" hidden></div>
+            <div class="alert-error" hidden></div>
 
         </div>
         <div class="contact-info"><p>Contact Info</p>
@@ -318,15 +322,9 @@
     </section>
 </footer>
 
-<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="libs/jquery-3.3.1.min.js"></script>
+<script src="libs/jquery.maskedinput.min.js"></script>
 <script src="assets/js/script.js"></script>
 
-<!--<script type="text/javascript">-->
-<!--window.onblur = function () {-->
-<!--window.onfocus = function () {-->
-<!--location.reload(true)-->
-<!--}-->
-<!--};-->
-<!--</script>-->
 </body>
 </html>
